@@ -13,15 +13,6 @@ func helper(t *testing.T) {
 	})
 }
 
-// === RUN   TestDefer
-// Start Test
-// Helper Called!
-// Something that needs deferring called!
-// Helper Called!
-// Defer Called!
-// Helper Cleanup Called!
-// Helper Cleanup Called!
-
 func TestDefer(t *testing.T) {
 	fmt.Println("Start Test")
 	helper(t)
@@ -31,15 +22,6 @@ func TestDefer(t *testing.T) {
 
 	helper(t)
 }
-
-// === RUN   TestCleanup
-// Start Test
-// Helper Called!
-// Something that needs cleaning up called!
-// Helper Called!
-// Helper Cleanup Called!
-// Cleanup Called!
-// Helper Cleanup Called!
 
 func TestCleanup(t *testing.T) {
 	fmt.Println("Start Test")
